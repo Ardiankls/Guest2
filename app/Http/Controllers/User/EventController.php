@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Event;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class EventController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,6 +17,7 @@ class UserController extends Controller
     {
         $events = Event::all(); // == SELECT * FROM
         $pages = 'event';
+
         return view('user.event.index', compact('events', 'pages'));
     }
 
@@ -27,7 +28,7 @@ class UserController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -38,7 +39,21 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        $data = $request->validate([
+//            'title'=>'required|unique:events',
+//            'description'=>'required',
+//            'created_by'=>'required',
+//            'event_date'=>'required'
+//        ]);
+//
+//        Event::create([
+//            'title' => $data['title'],
+//            'description' => $data['description'],
+//            'created_by' => $data['created_by'],
+//            'event_date' => $data['event_date']
+//        ]);
+//
+//        return redirect('/event')->with('success', 'Event Created');
     }
 
     /**
@@ -49,7 +64,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**

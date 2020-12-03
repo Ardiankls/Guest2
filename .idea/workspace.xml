@@ -25,7 +25,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,7 +43,6 @@
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
@@ -124,7 +125,6 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
@@ -162,6 +162,7 @@
       <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
     </include_path>
   </component>
   <component name="ProjectId" id="1icPsnoUXplPNfxt1RG3VRxOoGj" />
@@ -172,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../guestbookshrall" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GuestKoHen" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -182,16 +183,18 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\Guest\resources\views" />
+      <recent name="D:\xampp\htdocs\Guest\resources\views\user\event" />
+      <recent name="C:\xampp\htdocs\Guest\resources\views\event" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Guest\resources\views\student" />
       <recent name="C:\xampp\htdocs\Guest\resources\views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Guest\resources\views\event" />
     </key>
   </component>
   <component name="RunManager">
@@ -230,7 +233,18 @@
       <workItem from="1606224758760" duration="151000" />
       <workItem from="1606225216604" duration="603000" />
       <workItem from="1606234710476" duration="590000" />
-      <workItem from="1606317523473" duration="1185000" />
+      <workItem from="1606317523473" duration="10273000" />
+      <workItem from="1606353506253" duration="228000" />
+      <workItem from="1606353791762" duration="7388000" />
+      <workItem from="1606415939224" duration="88000" />
+      <workItem from="1606438661973" duration="10239000" />
+      <workItem from="1606699481564" duration="779000" />
+      <workItem from="1606715473352" duration="1360000" />
+      <workItem from="1606836747307" duration="1315000" />
+      <workItem from="1606838126406" duration="389000" />
+      <workItem from="1606874091231" duration="10556000" />
+      <workItem from="1606997776412" duration="14786000" />
+      <workItem from="1607015350641" duration="10161000" />
     </task>
     <servers />
   </component>
@@ -238,15 +252,27 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="205" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605806050736">
+    <state x="456" y="174" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607013194983">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="491" y="205" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1605806050736" />
+    <state x="456" y="174" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1607013194983" />
+    <state x="491" y="205" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607016311360">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="491" y="205" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1607016311360" />
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1604026720677" />
-    <state x="457" y="170" key="FileChooserDialogImpl" timestamp="1606152690660">
+    <state x="463" y="312" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1606445017691">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="457" y="170" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606152690660" />
+    <state x="463" y="312" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1366.768@0.0.1366.768" timestamp="1606445017691" />
+    <state x="446" y="325" width="474" height="293" key="ComposerInitDialogKey" timestamp="1606323942690">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="446" y="325" width="474" height="293" key="ComposerInitDialogKey/0.0.1366.768@0.0.1366.768" timestamp="1606323942690" />
+    <state x="457" y="170" key="FileChooserDialogImpl" timestamp="1607003146690">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="457" y="170" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1607003146690" />
     <state width="1323" height="230" key="GridCell.Tab.0.bottom" timestamp="1605230867916">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -263,14 +289,19 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="230" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1605230867916" />
-    <state x="531" y="191" key="SettingsEditor" timestamp="1604020694948">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="531" y="191" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1604020694948" />
-    <state x="443" y="166" width="672" height="496" key="search.everywhere.popup" timestamp="1606224179336">
+    <state x="149" y="58" key="SettingsEditor" timestamp="1606883781198">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="443" y="166" width="672" height="496" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606224179336" />
+    <state x="149" y="58" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606883781198" />
+    <state x="531" y="191" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1604020694948" />
+    <state x="391" y="72" width="583" height="624" key="find.popup" timestamp="1606333940821">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="391" y="72" width="583" height="624" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1606333940821" />
+    <state x="443" y="166" width="672" height="496" key="search.everywhere.popup" timestamp="1606925609719">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="443" y="166" width="672" height="496" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606925609719" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1604026674977" />
   </component>
 </project>

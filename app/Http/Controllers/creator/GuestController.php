@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Creator;
 
 use App\Http\Controllers\Controller;
-use App\Models\Event;
+use App\Models\User;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class GuestController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $events = Event::all(); // == SELECT * FROM
-        $pages = 'event';
-        return view('user.event.index', compact('events', 'pages'));
+        //
     }
 
     /**
@@ -27,7 +25,7 @@ class UserController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -38,7 +36,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = User::findOrFail($request->user_id);
+        $attend = $user->attends()->syncWithoutDetaching($request->event_id, ['is_approved' => '0']);
+        return empty($attend) ? redirect()->back()->with('Fail', "Failed to add new guest")
+            : redirect()->back()->with('Success', 'Guest Added');
     }
 
     /**
@@ -84,5 +85,25 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function approve($id, Request $request) {
+        $user = User::findOrFail($id);
+        $event = $user->attends->where('id', '=', $request->event_id)->first();
+        $event->pivot->update([
+            'is_approved' => '1',
+        ]);
+
+        return empty($event) ? redirect()->back()->with('Fail', "Failed to update status")
+            : redirect()->back()->with('Success', 'Success guest: #('.$user->name.') approved');
+    }
+    public function decline($id, Request $request) {
+        $user = User::findOrFail($id);
+        $event = $user->attends->where('id', '=', $request->event_id)->first();
+        $event->pivot->update([
+            'is_approved' => '2',
+        ]);
+
+        return empty($event) ? redirect()->back()->with('Fail', "Failed to update status")
+            : redirect()->back()->with('Success', 'Success guest: #('.$user->name.') approved');
     }
 }

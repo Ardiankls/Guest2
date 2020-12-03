@@ -17377,7 +17377,7 @@ return jQuery;
       reTrimStart = /^\s+/,
       reTrimEnd = /\s+$/;
 
-  /** Used to match wrap detail comments. */
+  /** Used to match wrap details comments. */
   var reWrapComment = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/,
       reWrapDetails = /\{\n\/\* \[wrapped with (.+)\] \*/,
       reSplitDetails = /,? & /;
