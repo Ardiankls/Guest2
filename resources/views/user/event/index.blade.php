@@ -1,9 +1,10 @@
 @extends('user.layouts.app')
 
 @section('content')
+    <div class="shadow-lg p-3 mb-5 bg-white rounded-lg">
     @include('user.event.modal.add')
     @auth
-        <div class="header mt-5 mb-5">
+        <div class="shadow-lg header mt-5 mb-5 rounded-lg">
             <h1>List Data</h1>
             {{-- <a class="mx-3 px-5 mb-3 btn btn-primary float-right" href="" role="button">Tambah</a> --}}
             <button type="button" class="mx-3 px-5 mb-3 btn btn-primary float-right" data-toggle="modal"
@@ -59,4 +60,5 @@
     @else
         <h1 class="h4 mb-0 font-weight-bold text-primary">No Records</h1>
     @endif
+    </div>
 @endsection
