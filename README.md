@@ -7,7 +7,7 @@
       $ composer install
       $ cp .env.example .env
       $ php artisan key:generate
-- make database with the exact nome from dbhost at env file
+- make database with the exact name from dbhost at env file
 - setup .env file then run migrate command
 
       $ php artisan migrate --seed
