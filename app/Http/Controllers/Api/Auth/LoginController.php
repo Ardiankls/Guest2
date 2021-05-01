@@ -18,6 +18,7 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->client = Client::find(2);
+//        $this->middleware('guest')->except('logout');
     }
 
     public function login(Request $request)
@@ -74,6 +75,24 @@ class LoginController extends Controller
         }
     }
 
+    public function logout()
+    {
+        $user = Auth::user();
+        $accesstoken = Auth::user()->token();
+        DB::table('oauth_refresh_tokens')->where('access_token_id', $accesstoken->id)->update(['revoked' => true]);
+
+        $user->update([
+            'is_login' => '0',
+        ]);
+
+        $accesstoken->revoke();
+
+        return response([
+            'message' => 'Logged Out.'
+        ]);
+    }
+
+
     private function is_login(int $id)
     {
         $user = User::findOrFail($id);
@@ -83,3 +102,14 @@ class LoginController extends Controller
     }
 
 }
+
+//    public function logout(Request $request)
+//    {
+//        $user = User::findOrFail(Auth::id());
+//        $user->update([
+//            'is_login' => '0',
+//        ]);
+//
+//        $request->session()->invalidate();
+//        return $this->LoggedOut($request) ?: redirect('login');
+//    }

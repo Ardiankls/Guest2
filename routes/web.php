@@ -23,10 +23,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+//    return view ('auth.login');
     return redirect()->route('event.index');
 });
-Route::get('activate' , [ActivationController::class, 'activate'])->name('activate');
 
+Route::get('activate' , [ActivationController::class, 'activate'])->name('activate');
 
 Route::resource('event', EventController::class);
 

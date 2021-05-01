@@ -37,6 +37,7 @@ class EventController extends Controller
         //display edit form based on event id
         $pages = 'event';
         return view('creator.event.edit', compact('event', 'pages'));
+
     }
 
 
